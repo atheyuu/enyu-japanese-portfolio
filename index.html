@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Kedebideri:wght@400;500;600;700;800;900&family=M+PLUS+1p&family=Short+Stack&family=Yomogi&family=Yuji+Boku&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+
+  <nav class="navbar">
+    
+    <button class="intro-btn active" onclick="showPage('intro', this)"><h1>LOW EN YU</h1></button>
+    
+    <div class="nav-btns">
+    <button class="nav-btn" onclick="showPage('intro', this)">Home</button>
+    <button class="nav-btn" onclick="showPage('about', this)">About Me</button>
+    <button class="nav-btn" onclick="showPage('work', this)">My Work</button>
+    <button class="nav-btn" onclick="showPage('events', this)">Events</button>
+    <button class="nav-btn" onclick="showPage('aspirations', this)">My Aspirations</button>
+    <button class="nav-btn" onclick="showPage('contact', this)">Contact Me</button>
+    </div>
+  </nav>
+
+    <main>
+    <div class="page intro active" id="intro" data-page="1">
+     <div class="banner">
+    <h1 class="japanese" lang="ja">日本語のポートフォリオ</h1>
+    <h1 >JAPANESE PORTFOLIO</h1>
+    </div>
+        <h1>
+          Hi! I am en yu.
+        </h1>
+      <hr>
+      <h1>Click to see more about me!</h1>
+      <div class="card-group">
+      <a href="#about" class="card" onclick= "showPage('about', this)"><p>ABOUT ME</p></a>
+        
+      <a href="#work" class="card" onclick= "showPage('work', this)"><p lang="ja">自分の成果物</p><p>MY WORK</p></a>
+        
+      <a href="#events" class="card" onclick= "showPage('events', this)"><p lang="ja">行事</p> <p>EVENTS</p></a>
+        
+      <a href="#aspirations" class="card"onclick= "showPage('aspirations', this)"><p>MY ASPIRATIONS</p></a>
+        
+      </div>
+    </div>
+
+      
+      <div class="page about " id="about" data-page="2">
+
+
+          <h2>
+            About Me
+          </h2>
+          <p>
+            I am a Secondary 2 student from Nanyang Girls' High School, and I take Japanese lessons from the Newton MOELC in class J2.XX. 
+          </p>
+
+        
+      </div>
+      <div class="page" id="work" data-page="3">
+        <h1>My Work</h1>
+      </div>
+      <div class="page" id="events" data-page="4"><h1>Events</h1></div>
+      
+      <div class="page" id="aspirations" data-page="5"><h1>My Aspirations</h1></div>
+      
+      <div class="page" id="contact" data-page="6"><h1>Contact Me</h1></div>
+<hr>
+    </main>
+      </body>
+
+    <footer>
+      <button class="next-btn" onclick="showNext()">Next Page</button>
+
+      <div class="footer-main">
+        
+      </div>
+      
+    </footer>
+    
+    <script src="./script.js"></script>
+
+
+</html>
